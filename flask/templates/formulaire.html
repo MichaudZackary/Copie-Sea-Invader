@@ -1,0 +1,12 @@
+<!-- Messages d'erreurs s'il y a lieu -->
+{% for message in liste_message %}
+    <p> {{ message }} </p>
+{% endfor %}
+
+<!-- Formulaire -->
+<form method="post">
+  Username : <input name="Username" value="{{ contact[1] }}"/><br/>
+  Wave : <input name="Score" value="{{ contact[2] }}"/><br/>
+  Score : <input name="Wave" value="{{ contact[3] }}"/><br/>
+  <button type="submit">Sauvegarder</button>
+</form>
